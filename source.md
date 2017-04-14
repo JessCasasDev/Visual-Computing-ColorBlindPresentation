@@ -31,7 +31,7 @@ H:
 
 Defecto de la vista que consiste en no distinguir ciertos colores o confundirlos con otros, comúnmente entre verdes y rojos, y ocasionalmente azules.
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.1.PNG'/>
 
 V:
 
@@ -61,15 +61,15 @@ Deuteranopes no ven el color VERDE
 
 Tritanopes no ven el AZUL
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.2.PNG'/>
 
 V:
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.3.PNG'/>
 
 V:
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.4.PNG'/>
 
 H:
 
@@ -83,45 +83,45 @@ Department of Computer Science, Federal Urdu University of Arts, Sciences and Te
 
 V:
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.5.PNG'/>
 
 V:
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.6.PNG'/>
 
 V:
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.7.PNG'/>
 
 V:
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.8.PNG'/>
 
 V:
 
 ## Combinación de Colores
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.9.PNG'/>
 
 V:
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.10.PNG'/>
 
 V:
 
 ## Ejemplo de uso de una aplicación para personas daltónicas
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.11.PNG'/>
 
 V:
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.12.PNG'/>
 
 H:
 
 ## Tips para diseñar en beneficio de los daltónicos
 
-Tips para diseñar en beneficio de los daltónicos
+<img height='300' src='img/img.13.PNG'/>
 
 V:
 
@@ -145,13 +145,13 @@ V:
 
 ## Tips para diseñar en beneficio de los daltónicos
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.14.PNG'/>
 
 V:
 
 ## Tips para diseñar en beneficio de los daltónicos
 
-<img height='300' src='fig/image3.JPG'/>
+<img height='300' src='img/img.15.PNG'/>
 
 H:
 
