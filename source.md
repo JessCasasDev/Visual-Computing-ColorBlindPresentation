@@ -21,9 +21,9 @@ H:
 
 # El Daltonismo y las Aplicaciones
 
-Andrés Acuña
-Jessica Casas
-Carlos Cogua
+* Andrés Acuña
+* Jessica Casas
+* Carlos Cogua
 
 H:
 
@@ -39,9 +39,9 @@ V:
 
 Cuando una o más de las células cónicas de color están ausentes, o detectan un color diferente al normal.
 
-Un daltonismo severo ocurre cuando hay una ausencia de los tres conos.
+Un <span style="color:#FF1111">daltonismo severo</span> ocurre cuando hay una ausencia de los tres conos.
  
-Un daltonismo leve ocurre cuando hay los tres conos están presentes, pero alguna de las células cónicas no funciona normalmente y detecta un color diferente al normal.
+Un  <span style="color:#FF1111">daltonismo leve</span> ocurre cuando hay los tres conos están presentes, pero alguna de las células cónicas no funciona normalmente y detecta un color diferente al normal.
 
 V:
 
@@ -55,21 +55,21 @@ V:
 
 ## Tipos de daltonismo
 
-Protanopes no ven el color ROJO
+Protanopes no ven el color  <span style="color:#FF0000">ROJO</span>
 
-Deuteranopes no ven el color VERDE
+Deuteranopes no ven el color  <span style="color:#00FF00">VERDE</span>
 
-Tritanopes no ven el AZUL
+Tritanopes no ven el  <span style="color:#0000FF">AZUL</span>
 
 <img height='300' src='img/img-2.PNG'/>
 
 V:
-
-<img height='300' src='img/img-3.PNG'/>
+## Tipos de Daltonismo 
+<img height='400' src='img/img-3.PNG'/>
 
 V:
-
-<img height='300' src='img/img-4.PNG'/>
+## Tipos de Daltonismo
+<img height='400' src='img/img-4.PNG'/>
 
 H:
 
@@ -82,20 +82,23 @@ Muhammad Sarim , Abdul Basit Shaikh and Sheikh Kashif Raffat.
 Department of Computer Science, Federal Urdu University of Arts, Sciences and Technology, Karachi, PAKISTAN
 
 V:
+## Modelo del Algoritmo de Asistencia 
+<img height='500' src='img/img-5.PNG'/>
 
-<img height='300' src='img/img-5.PNG'/>
+V:
+## Algoritmo para el Identificador de Colores  // Algoritmo Daltonizer 
+<img height='450' src='img/img-6.PNG'/>
+
+V:
+## Ejemplo de una pintura con daltonización de Gauguin 
+
+<img height='400' src='img/img-7.PNG'/>
 
 V:
 
-<img height='300' src='img/img-6.PNG'/>
+## Algoritmo del Simulador
 
-V:
-
-<img height='300' src='img/img-7.PNG'/>
-
-V:
-
-<img height='300' src='img/img-8.PNG'/>
+<img height='450' src='img/img-8.PNG'/>
 
 V:
 
@@ -104,18 +107,18 @@ V:
 <img height='300' src='img/img-9.PNG'/>
 
 V:
-
-<img height='300' src='img/img-10.PNG'/>
+## Algoritmo del Harmonizador
+<img height='450' src='img/img-10.PNG'/>
 
 V:
 
 ## Ejemplo de uso de una aplicación para personas daltónicas
 
-<img height='300' src='img/img-11.PNG'/>
+<img height='400' src='img/img-11.PNG'/>
 
 V:
-
-<img height='300' src='img/img-12.PNG'/>
+## Ejemplo 2
+<img height='500' src='img/img-12.PNG'/>
 
 H:
 
@@ -157,13 +160,13 @@ H:
 
 ## Referencias
 
-1. An Assistive Model for ICT Applications for Color Blindness, Wafa Qaiser Khan, Reema Qaiser Khan, Muhammad Sarim, Abdul Basit Shaikh and Sheikh Kashif Raffa
+* An Assistive Model for ICT Applications for Color Blindness, Wafa Qaiser Khan, Reema Qaiser Khan, Muhammad Sarim, Abdul Basit Shaikh and Sheikh Kashif Raffa
 
-2. New app lets colour blind people see for the first time - their reactions are amazing [http://www.telegraph.co.uk/technology/news/11882403/New-app-lets-colour-blind-people-see-for-the-first-time-their-reactions-are-amazing.html]
+* [New app lets colour blind people see for the first time - their reactions are amazing](http://www.telegraph.co.uk/technology/news/11882403/New-app-lets-colour-blind-people-see-for-the-first-time-their-reactions-are-amazing.html)
 
-3. ¿Qué es el daltonismo? [https://www.aao.org/salud-ocular/enfermedades/daltonismo]
+* [¿Qué es el daltonismo?](https://www.aao.org/salud-ocular/enfermedades/daltonismo)
 
-4. El Daltonismo [https://www.uam.es/personal_pdi/medicina/algvilla/fundamentos/nervioso/Daltonismo/daltonismo.htm]
+* [El Daltonismo](https://www.uam.es/personal_pdi/medicina/algvilla/fundamentos/nervioso/Daltonismo/daltonismo.html)
 
-5. Why Color Blindness is No Longer a Problem for Web Design [https://www.templatemonster.com/blog/designing-colorblind-friendly-website/]
+* [Why Color Blindness is No Longer a Problem for Web Design](https://www.templatemonster.com/blog/designing-colorblind-friendly-website/)
 
