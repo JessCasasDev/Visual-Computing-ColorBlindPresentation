@@ -1,3 +1,5 @@
+import processing.video.*;
+
 int bX1, bX2, bX3, bX4;
 int bY;
 int bSX, bSY;
@@ -5,6 +7,8 @@ int step;
 int select;
 int activity;
 int[] results;
+Capture cam;
+String[] cameras = Capture.list();
 
 float divi;
 float bit;
@@ -18,7 +22,7 @@ color over = color(10,10,10,40);
 color base = color(255);
 
 void setup(){
-  size(500, 600);
+  size(500, 600, P3D);
   select = 0;
   bSX = 80;
   bSY = 50;
@@ -35,6 +39,21 @@ void setup(){
   results = new int[21];
   bY = height-bSY*2;
   loadText();
+  
+   if (cameras.length == 0) {
+    println("There are no cameras available for capture.");
+    exit();
+  } else {
+    println("Available cameras:");
+    for (int i = 0; i < cameras.length; i++) {
+      println(i, cameras[i]);
+    }
+    
+    // The camera can be initialized directly using an 
+    // element from the array returned by list():
+    cam = new Capture(this, cameras[0]);
+    cam.start();     
+  }     
 }
 
 void draw(){
@@ -46,4 +65,8 @@ void draw(){
     case 2: videoRes();
     break;
   }
+  if (cam.available() == true) {
+    cam.read();
+  }
+  
 }
