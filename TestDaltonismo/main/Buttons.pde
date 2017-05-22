@@ -94,7 +94,7 @@ void loadText(){
   
   // Carta para Deuteranopia
   text[7][0] = "3"; //Normal
-  text[7][1] = "";
+  text[7][1] = "8";
   text[7][2] = "5"; //Rojo-verde - Protanopia
   text[7][3] = "Ninguno"; //Daltonismo indeterminado
   
@@ -106,26 +106,26 @@ void loadText(){
   
   // Carta para Deuteranopia
   text[9][0] = "74"; //Normal
-  text[9][1] = "";
+  text[9][1] = "14";
   text[9][2] = "21"; //Rojo-verde - Protanopia
   text[9][3] = "Ninguno"; //Daltonismo indeterminado
   
   // Carta para Protanopia
   text[10][0] = "2"; //Normal
-  text[10][1] = "";
+  text[10][1] = "7";
   text[10][2] = "5"; //Rojo-verde - Protanopia
   text[10][3] = "Ninguno"; //Daltonismo indeterminado
   
   // Carta para Deuteranopia
-  text[11][0] = "";
-  text[11][1] = "";
+  text[11][0] = "8";
+  text[11][1] = "3";
   text[11][2] = "6"; //Normal 
   text[11][3] = "Ninguno"; //Daltonismo indeterminado
   
   // Carta para Protanopia
   text[12][0] = "97"; //Normal
-  text[12][1] = "";
-  text[12][2] = "";
+  text[12][1] = "91";
+  text[12][2] = "87";
   text[12][3] = "Ninguno"; //Daltonismo indeterminado
   
   // Carta para Deuteranopia
@@ -137,13 +137,13 @@ void loadText(){
   // Carta para Deuteranopia
   text[14][0] = "1";
   text[14][1] = "7"; //Normal
-  text[14][2] = "";
+  text[14][2] = "2";
   text[14][3] = "Ninguno"; //Daltonismo indeterminado
   
   // Carta para Deuteranopia
-  text[15][0] = "";
+  text[15][0] = "76";
   text[15][1] = "16"; //Normal
-  text[15][2] = "";
+  text[15][2] = "7";
   text[15][3] = "Ninguno"; //Daltonismo indeterminado
   
   // Carta para Deuteranopia
