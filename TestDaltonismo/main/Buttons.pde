@@ -50,100 +50,117 @@ void buttons(){
 
 void loadText(){
   text = new String[21][4];
-  text[0][0] = "12"; //Cualquiera
+  // Carta para protanopia
+  text[0][0] = "12"; //Normal
   text[0][1] = "1";
   text[0][2] = "2";
   text[0][3] = "Ninguno";
   
-  text[1][0] = "3"; //Rojo-verde
+  // Carta para protanopia
+  text[1][0] = "3"; //Rojo-verde - Protanopia
   text[1][1] = "8"; //Normal
-  text[1][2] = "5";
-  text[1][3] = "Ninguno";
+  text[1][2] = "5"; //+protanopia
+  text[1][3] = "Ninguno"; //Daltonismo indeterminado
   
+  // Carta para protanopia
   text[2][0] = "6"; //Normal
-  text[2][1] = "";
-  text[2][2] = "5"; //Rojo-verde
-  text[2][3] = "Ninguno";
+  text[2][1] = "8"; //+protanopia
+  text[2][2] = "5"; //Rojo-verde - Protanopia
+  text[2][3] = "Ninguno"; //Daltonismo indeterminado
   
-  text[3][0] = "70";  //Rojo-verde
-  text[3][1] = "";
+  // Carta para protanopia
+  text[3][0] = "70";  //Rojo-verde - Protanopia
+  text[3][1] = "58"; //+protanopia
   text[3][2] = "29"; //Normal
-  text[3][3] = "Ninguno";
+  text[3][3] = "Ninguno"; //Daltonismo indeterminado
   
-  text[4][0] = "35"; //Rojo-verde
+  // Carta para protanopia
+  text[4][0] = "35"; //Rojo-verde - Protanopia
   text[4][1] = "57"; //Normal
-  text[4][2] = "";
-  text[4][3] = "Ninguno";
+  text[4][2] = "51"; //+protanopia
+  text[4][3] = "Ninguno"; //Daltonismo indeterminado
   
-  text[5][0] = "";
+  // Carta para protanopia
+  text[5][0] = "75"; //+protanopia
   text[5][1] = "45"; //Normal
-  text[5][2] = "2"; //Rojo-verde
-  text[5][3] = "Ninguno";
+  text[5][2] = "2"; //Rojo-verde - Protanopia
+  text[5][3] = "Ninguno"; //Daltonismo indeterminado
   
-  text[6][0] = "5"; //Rojo-verde
-  text[6][1] = "";
+  // Carta para Deuteranopia
+  text[6][0] = "2"; //Rojo-verde - Protanopia
+  text[6][1] = "7"; //+deuteronopia 
   text[6][2] = "5"; //Normal
-  text[6][3] = "Ninguno";
+  text[6][3] = "Ninguno"; //Daltonismo indeterminado
   
+  // Carta para Deuteranopia
   text[7][0] = "3"; //Normal
   text[7][1] = "";
-  text[7][2] = "17"; //Rojo-verde
-  text[7][3] = "Ninguno";
+  text[7][2] = "5"; //Rojo-verde - Protanopia
+  text[7][3] = "Ninguno"; //Daltonismo indeterminado
   
+  // Carta para Deuteranopia
   text[8][0] = "15"; //Normal
-  text[8][1] = "";
-  text[8][2] = "21"; //Rojo-verde
-  text[8][3] = "Ninguno";
+  text[8][1] = "17"; //Rojo-verde - Protanopia
+  text[8][2] = "21"; //Rojo-verde - Protanopia
+  text[8][3] = "Ninguno"; //Daltonismo indeterminado
   
+  // Carta para Deuteranopia
   text[9][0] = "74"; //Normal
   text[9][1] = "";
-  text[9][2] = "";
-  text[9][3] = "Ninguno"; //Rojo-verde
+  text[9][2] = "21"; //Rojo-verde - Protanopia
+  text[9][3] = "Ninguno"; //Daltonismo indeterminado
   
+  // Carta para Protanopia
   text[10][0] = "2"; //Normal
   text[10][1] = "";
-  text[10][2] = "";
-  text[10][3] = "Ninguno"; //Rojo-verde
+  text[10][2] = "5"; //Rojo-verde - Protanopia
+  text[10][3] = "Ninguno"; //Daltonismo indeterminado
   
+  // Carta para Deuteranopia
   text[11][0] = "";
   text[11][1] = "";
   text[11][2] = "6"; //Normal 
-  text[11][3] = "Ninguno"; //Rojo-verde
+  text[11][3] = "Ninguno"; //Daltonismo indeterminado
   
+  // Carta para Protanopia
   text[12][0] = "97"; //Normal
   text[12][1] = "";
   text[12][2] = "";
-  text[12][3] = "Ninguno"; //Rojo-verde
+  text[12][3] = "Ninguno"; //Daltonismo indeterminado
   
-  text[13][0] = "";
-  text[13][1] = "";
+  // Carta para Deuteranopia
+  text[13][0] = "3";
+  text[13][1] = "2"; //Rojo-verde - Protanopia
   text[13][2] = "5"; //Normal
-  text[13][3] = "Ninguno"; //Rojo-verde
+  text[13][3] = "Ninguno"; //Daltonismo indeterminado
   
-  text[14][0] = "";
+  // Carta para Deuteranopia
+  text[14][0] = "1";
   text[14][1] = "7"; //Normal
   text[14][2] = "";
-  text[14][3] = "Ninguno"; //Rojo-verde
+  text[14][3] = "Ninguno"; //Daltonismo indeterminado
   
+  // Carta para Deuteranopia
   text[15][0] = "";
   text[15][1] = "16"; //Normal
   text[15][2] = "";
-  text[15][3] = "Ninguno"; //Rojo-verde
+  text[15][3] = "Ninguno"; //Daltonismo indeterminado
   
+  // Carta para Deuteranopia
   text[16][0] = "73"; //Normal
-  text[16][1] = "";
-  text[16][2] = "";
-  text[16][3] = "Ninguno"; //Rojo-verde
+  text[16][1] = "13";
+  text[16][2] = "78";
+  text[16][3] = "Ninguno"; //Daltonismo indeterminado
   
   text[17][0] = "6"; //Prota
   text[17][1] = "2"; //Deute
   text[17][2] = "26"; //Normal
-  text[17][3] = "Ninguno";
+  text[17][3] = "Ninguno"; 
   
   text[18][0] = "42"; //Normal
   text[18][1] = "2"; //Prota
   text[18][2] = "4"; //Deute
-  text[18][3] = "Ninguno"; //Rojo-verde
+  text[18][3] = "Ninguno"; //Rojo-verde - Protanopia
   
   text[19][0] = "35"; //Normal
   text[19][1] = "3"; //Deute

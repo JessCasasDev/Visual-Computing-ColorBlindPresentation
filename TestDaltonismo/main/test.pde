@@ -35,6 +35,9 @@ void mousePressed() {
     for(int i = 0; i < 21; i++){
       print(results[i] + " ");
     }
+    // Resultado normal        1 2 1 3 2 2 3 1 1 1 1 3 1 3 2 2 1 3 1 1 3
+    // Resultado protanope     X 1 3 1 1 3 1 3 3 4 4 4 4 4 4 4 4 1 2 3 1
+    // Resultado deuteranope   1
     step = 0;
     activity = 1;
   }
