@@ -1,6 +1,6 @@
 void analysisRes(){
   identifyDaltType();
-  activity = 2;
+  activity = 3;
 }
 
 

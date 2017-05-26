@@ -24,6 +24,7 @@ int overBut()  {
 }
 
 void buttons(){
+  textSize(20);
   fill(50);
   if(select == 1) fill(10);
   rect(bX1, bY, bSX, bSY);
@@ -41,9 +42,10 @@ void buttons(){
   text(text[step][2], bX3 + bit, bY+bSY/2); 
   fill(50);
   if(select == 4) fill(10);
+  textSize(16);
   rect(bX4, bY, bSX, bSY);
   fill(255);
-  text(text[step][3], bX4 + bit, bY+bSY/2); 
+  text(text[step][3], bX4 + bit/4, bY+bSY/2); 
   fill(50);
 }
 
