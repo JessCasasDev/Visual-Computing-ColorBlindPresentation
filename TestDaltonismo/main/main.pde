@@ -23,7 +23,7 @@ color over = color(10,10,10,40);
 color base = color(255);
 
 void setup(){
-  size(500, 600);
+  size(500, 600, P3D);
   select = 0;
   bSX = 80;
   bSY = 50;
