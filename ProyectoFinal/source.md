@@ -1,4 +1,4 @@
-<section id="themes">
+﻿<section id="themes">
 	<h2>Themes</h2>
 		<p>
 			Set your presentation theme: <br>
@@ -19,7 +19,7 @@
 
 H:
 
-# El Daltonismo y las Aplicaciones
+# Proyecto Final
 
 * Andrés Acuña
 * Jessica Casas
@@ -86,15 +86,6 @@ V:
 <img height='500' src='img/img-5.PNG'/>
 
 V:
-## Algoritmo para el Identificador de Colores  // Algoritmo Daltonizer 
-<img height='450' src='img/img-6.PNG'/>
-
-V:
-## Ejemplo de una pintura con daltonización de Gauguin 
-
-<img height='400' src='img/img-7.PNG'/>
-
-V:
 
 ## Algoritmo del Simulador
 
@@ -107,54 +98,47 @@ V:
 <img height='300' src='img/img-9.PNG'/>
 
 V:
-## Algoritmo del Harmonizador
-<img height='450' src='img/img-10.PNG'/>
-
-V:
 
 ## Ejemplo de uso de una aplicación para personas daltónicas
 
 <img height='400' src='img/img-11.PNG'/>
 
 V:
+
 ## Ejemplo 2
 <img height='500' src='img/img-12.PNG'/>
 
 H:
 
-## Tips para diseñar en beneficio de los daltónicos
-
-<img height='300' src='img/img-13.PNG'/>
-
-V:
-
-## Tips para diseñar en beneficio de los daltónicos
-
-* Si se cambia de color al realizar un hover, asegurarse de que los colores sean muy diferentes y que el brillo en el cambio sea notable. Hacer el cambio visual visible.
-* Exagerar la diferencia entre el fondo y el primer plano.
-* Evitar usar colores con brillos similares.
+## Herramienta Desarrollada
+* Processing 3
+* Shader por tipo de Daltonismo
+* 3 etapas
 
 V:
 
-## Tips para diseñar en beneficio de los daltónicos
-
-* No usar colores para transmitir información de gran importancia.
-* Incrementar el contraste entre colores similares
-* Resaltar el brillo en colores claros y hacer hincapié en los colores oscuros
-* Incrementar la saturación de colores
-* Usar patrones, símbolos y trazos
+## Etapas
 
 V:
 
-## Tips para diseñar en beneficio de los daltónicos
-
-<img height='300' src='img/img-14.PNG'/>
+## 1) Test de Ishihara
+* 21 Cartas Identificadoras
+* De Control, Propias para cada tipo de Daltonismo
 
 V:
 
-## Tips para diseñar en beneficio de los daltónicos
+## 2) Analisis de resultados
+* Resultados del Test
+* Probabilidad de padecer cada enfermedad
 
-<img height='300' src='img/img-15.PNG'/>
+V:
+
+## 3) Video
+* Carga de shader desarrollado segun el analisis de datos obtenido	
+
+H:
+
+## Resultados
 
 H:
 
