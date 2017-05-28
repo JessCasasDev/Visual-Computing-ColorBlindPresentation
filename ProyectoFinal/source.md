@@ -134,7 +134,7 @@ V:
 V:
 
 ## 3) Video
-* Carga de shader desarrollado segun el analisis de datos obtenido	
+* Carga de shader desarrollado según el análisis de datos obtenido	
 
 H:
 
