@@ -99,17 +99,6 @@ V:
 
 V:
 
-## Otras referencias
-
-
-* [Intelligent modification for the daltonization process of digitized paintings](http://biecoll.ub.uni-bielefeld.de/volltexte/2007/52/pdf/ICVS2007-6.pdf) - Matriz de daltonismo
-
-* [Green-Weak Color Blindness Correction](https://prezi.com/3lwgj2wqqtvg/green-weak-color-blindness-correction/) - Correción de color
-
-* [Shaders basicos](https://processing.org/reference/shader_.html)
-
-V:
-
 ## Ejemplo de uso de una aplicación para personas daltónicas
 
 <img height='400' src='img/img-11.PNG'/>
@@ -144,8 +133,8 @@ V:
 
 V:
 
-## 3) Video
-* Carga de shader desarrollado segun el analisis de datos obtenido	
+## 3) Imagenes Y Video
+* Carga de shader desarrollado en GLSL segun el analisis de datos obtenido	
 
 H:
 
@@ -189,3 +178,5 @@ V:
 * [Green-Weak Color Blindness Correction](https://prezi.com/3lwgj2wqqtvg/green-weak-color-blindness-correction/) - Correción de color
 
 * [Shaders basicos](https://processing.org/reference/shader_.html)
+
+
