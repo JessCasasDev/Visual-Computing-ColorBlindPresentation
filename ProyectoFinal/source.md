@@ -161,7 +161,7 @@ V:
 V:
 
 ## deuteranopia
-<img height='350' src='img/deu-0.png'/>
+<img height='350' src='img/deu-0.PNG'/>
 <img height='350' src='img/deu-1.png'/>
 <img height='350' src='img/deu-2.png'/>
 
