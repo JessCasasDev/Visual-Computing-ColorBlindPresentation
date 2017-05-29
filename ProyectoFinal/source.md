@@ -97,7 +97,7 @@ V:
 ## Tipos de Daltonismo
 <img height='400' src='img/img-4.PNG'/>
 
-H:
+V:
 
 ## An Assistive Model for ICT Applications for Color Blindness
 
@@ -134,7 +134,10 @@ V:
 ## Ejemplo
 <img height='500' src='img/img-12.PNG'/>
 
-H:
+H: 
+## Interacción
+
+V:
 
 ## Herramienta Desarrollada
 * Processing 3
@@ -190,6 +193,45 @@ V:
 <img height ='400' src='img/deuteranopia.PNG'/>
 <img height ='400' src='img/deutCorreccion.PNG'/>
 
+V: 
+
+## Uso de la Aplicación
+
+<table>
+<tr>
+  <td><strong>Tecla</strong></td>
+  <td><strong>Uso</strong></td>
+</tr>
+ 
+<tr>
+  <td>Y</td>
+  <td>Aplica el Filtro</td>
+</tr>
+
+<tr>
+  <td>N</td>
+  <td>Borra el Filtro</td>
+</tr>
+
+<tr>
+  <td>Q</td>
+  <td>Aplica Filtro Deuteranope</td>
+</tr>
+
+<tr>
+  <td>W</td>
+  <td>Aplica Filtro Protanope</td>
+</tr>
+
+<tr>
+  <td>P</td>
+  <td>Aplica la Corrección de Imagen para Protanopes</td>
+</tr>
+
+<tr>
+  <td>D</td>
+  <td>Aplica la Corrección de Imagen para Deuteranopes</td>
+</tr>
 H:
 
 ## Resultados
