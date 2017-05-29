@@ -1,6 +1,7 @@
 import processing.video.*;
 import javax.swing.JOptionPane; 
 import javax.swing.JDialog; 
+
 int bX1, bX2, bX3, bX4;
 int bY1Menu, bY2Menu, bY3Menu, bY4Menu;
 int bY, bX;
@@ -8,13 +9,16 @@ int bSX, bSY;
 int step;
 int select;
 int activity;
-int imaR;
 int[] results;
+int[] imageRDeu;
+int[] imageRPro;
 Capture cam;
 String[] cameras = Capture.list();
 
 float divi;
 float bit;
+float protanopia;
+float deuteranopia;
 PImage img;
 
 String[][] text;
