@@ -1,36 +1,56 @@
 PGraphics pg;
-PShader colorFilter, toon, vert;
-boolean applyFilter = false;
-
+PShader toon;
+boolean applyFilter = false, prot = false, deut = false, protFilter = false, deutFilter = false;
 
 void videoRes(){
   
   clear();
   image(cam, 0, 0);
   toon = loadShader("color.glsl");
-  float c = 1.0; // Contrast is maximum
-  float s = map( mouseX / (float) width,  0.0, 1.0, 0.0, 1.5 ); // map the saturation to the horizontal position of the cursor
-  float b = map( mouseY / (float) height, 0.0, 1.0, 0.3, 1.5 ); // map the brightness to the vertical position of the cursor
-
-  // Pass the parameters to the shader
-  toon.set( "contrast",   c );
-  toon.set( "saturation", s );
-  toon.set( "brightness", b );
-  if (applyFilter)
-  filter(toon);
-  //filter(loadShader("color.glsl"));
- // rect(400,400,300,100);
- 
+  if (applyFilter){
+    if(deut)
+      toon.set("deuteranopia", true);
+    if(prot)
+      toon.set("protanopia", true);
+    if(protFilter)
+      toon.set("protanopiaFilter", true);
+    if(deutFilter)
+      toon.set("deuteranopiaFilter", true);
+    filter(toon);    
+  }
 }
 
 void keyPressed(){
   if(key == 'y'){
     applyFilter = true;
-   //toon = loadShader("ToonFrag.glsl", "ToonVert.glsl");
  }
  if(key == 'n'){
    applyFilter = false;
    resetShader();
-  
  }
+ if(key == 'p'){
+   protFilter = true;
+   deutFilter = false;
+   deut = false;
+   prot = false;
+ }
+ if(key == 'd'){
+   protFilter = false;
+   deutFilter = true;
+   deut = false;
+   prot = false;
+ }
+ if(key == 'q'){
+   protFilter = false;
+   deutFilter = false;
+   deut = true;
+   prot = false;
+ }
+ if(key == 'w'){
+   protFilter = false;
+   deutFilter = false;
+   deut = false;
+   prot = true;
+ }
+ 
 }

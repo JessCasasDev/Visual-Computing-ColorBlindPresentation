@@ -9,15 +9,15 @@ void drawInit(){
   int base = 150;
   int divider = height/15;
   text("Herramienta para", width/8,base);
-  text("deteccion de", width/8,base + divider);
+  text("detección de", width/8,base + divider);
   text("daltonismo", width/8,base + divider*2);
   textSize(16);
   text("Andrés Acuña, Jessica Casas,", width/8,base + divider*4);
   text("Carlos Cogua", width/8,base + divider*5);
   text("Seleccione cualquier", width/8,base + divider*7);
-  text("opcion", width/8,base + divider*8);
+  text("opción", width/8,base + divider*8);
   textSize(20);
-  text("Universidad Nacional De Colombia", width/8,base + divider*10);
+  text("Universidad Nacional De Colombia", width/8,base + divider*10+20);
 }
 
 void drawBut(){
@@ -56,12 +56,12 @@ void buttonsMenu(){
   if(select == 2) fill(10);
   rect(bX, bY2Menu, bSX, bSY);
   fill(255);
-  text("Analisis",  bX + bit/3, bY2Menu + bSY/2); 
+  text("Análisis",  bX + bit/3, bY2Menu + bSY/2); 
   fill(50);
   if(select == 3) fill(10);
   rect(bX, bY3Menu, bSX, bSY);
   fill(255);
-  text("Camara",  bX + bit/3, bY3Menu + bSY/2); 
+  text("Cámara",  bX + bit/3, bY3Menu + bSY/2); 
   fill(50);
   if(select == 4) fill(10);
   rect(bX, bY4Menu, bSX, bSY);

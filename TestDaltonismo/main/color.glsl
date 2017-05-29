@@ -14,58 +14,104 @@ varying vec4 vertTexCoord;
 
 // Parameters
 
-uniform float contrast;
-uniform float saturation;
-uniform float brightness;
-
-/*
-uniform float contrast   = 0.5;
-uniform float saturation = 0.5;
-uniform float brightness = 0.5;
-*/
+uniform bool protanopia;
+uniform bool deuteranopia;
+uniform bool protanopiaFilter;
+uniform bool deuteranopiaFilter;
 
 
-/*
-** Contrast, saturation, brightness
-** Code of this function is from TGM's shader pack
-** http://irrlicht.sourceforge.net/phpBB2/viewtopic.php?t=21057
-*/
-
-// For all settings: 1.0 = 100% 0.5=50% 1.5 = 150%
-vec3 ContrastSaturationBrightness(vec3 color, float brt, float sat, float con)
-{
-	// Increase or decrease theese values to adjust r, g and b color channels seperately
-	const float AvgLumR = 1.0;
-	const float AvgLumG = 1.0;
-	const float AvgLumB = 1.0;
-	
-	const vec3 LumCoeff = vec3(0.2125, 0.7154, 0.0721);
-	
-	vec3 AvgLumin  = vec3(AvgLumR, AvgLumG, AvgLumB);
-	vec3 brtColor  = color * brt;
-	vec3 intensity = vec3(dot(brtColor, LumCoeff));
-	vec3 satColor  = mix(intensity, brtColor, sat);
-	vec3 conColor  = mix(AvgLumin, satColor, con);
-	
-	return conColor;
+vec3 setLMS(vec3 color){
+	vec3 LMS;
+	LMS.x = 17.8824*color.x + 43.5161*color.y + 4.11935*color.z;
+	LMS.y = 3.45565*color.x + 27.1554*color.y + 3.86714*color.z;
+	LMS.z = 0.0299566*color.x + 0.184309*color.y + 1.46709*color.z;
+	return LMS;
 }
 
-vec3 swapColorRed(vec3 color){
-	// implementar aca el cambio adecuado según el color recibido
-	color.x = color.x + 0.8;
-	color.y = color.y + 0.3;
-	color.z = color.z + 0.3;
-	return color;
+vec3 setNewRGB(vec3 lms){
+	vec3 RGB;
+	RGB.x = 0.080944*lms.x - 0.130504*lms.y + 0.116721*lms.z; 
+	RGB.y = - 0.0102485*lms.x + 0.0540194*lms.y - 0.113615*lms.z;
+	RGB.z = - 0.000365294*lms.x - 0.00412163*lms.y + 0.693513*lms.z;
+	return RGB;
 }
 
-vec3 swapColorGreen(vec3 color){
-	// implementar aca el cambio adecuado según el color recibido
-	color.x = color.x + 0.3;
-	color.y = color.y + 0.8;
-	color.z = color.z + 0.3;
-	return color;
+vec3 setProtanopia(vec3 color){
+	vec3 newColor;
+	newColor.x = 2.02344*color.y - 2.52581*color.z;
+	newColor.y = color.y;
+	newColor.z = color.z;
+
+	return newColor;
+}
+vec3 setDeuteranopia(vec3 color){
+	vec3 newColor;
+	newColor.x = color.x;
+	newColor.y = 0.494207*color.x + 1.24827*color.z;
+	newColor.z = color.z;
+
+	return newColor;
 }
 
+vec3 correctProtanopia(vec3 lms, vec3 deut){
+	vec3 lmsc, e, emod, final;
+	//Matriz de Error
+	lmsc.x = lms.x - deut.x ;
+	lmsc.y = lms.y - deut.y ;
+	lmsc.z = lms.z - deut.z ;
+
+	//Se aÃ±ade el error a los valores de la imagen original
+	e.x = lms.x + lmsc.x;
+	e.y = lms.y + lmsc.y;
+	e.z = lms.z + lmsc.z;
+
+	//Matriz de Error Modificado 
+	/*
+	[0 0 0] [r]
+	[0.7 1 0] [g]
+	[0.7 0 1] [b]
+	*/
+	emod.x = 0;
+	emod.y = 0.7*lmsc.x + lmsc.y;
+	emod.z = 0.7*lmsc.x + lmsc.z; 
+	
+
+	//La anterior matriz se agrega a la imagen original
+	final.x = lms.x + emod.x;
+	final.y = lms.y + emod.y;
+	final.z = lms.z + emod.z;
+	return final;
+}
+
+vec3 correctDeuteranopia(vec3 lms, vec3 deut){
+	vec3 lmsc, e, emod, final;
+	//Matriz de Error
+	lmsc.x = lms.x - deut.x ;
+	lmsc.y = lms.y - deut.y ;
+	lmsc.z = lms.z - deut.z ;
+
+	//Se aÃ±ade el error a los valores de la imagen original
+	e.x = lms.x + lmsc.x;
+	e.y = lms.y + lmsc.y;
+	e.z = lms.z + lmsc.z;
+
+	//Matriz de Error Modificado 
+	/*
+	[1 0.7 0] [r]
+	[0 0 0] [g]
+	[0 0.7 1] [b]
+	*/
+	emod.x = lmsc.x + 0.7*lmsc.y;
+	emod.y = 0;
+	emod.z = 0.7*lmsc.y + lmsc.z; 
+	
+
+	//La anterior matriz se agrega a la imagen original
+	final.x = lms.x + emod.x;
+	final.y = lms.y + emod.y;
+	final.z = lms.z + emod.z;
+	return final;
+}
 void main(void)
 {
 	vec2 coord = vertTexCoord.st;
@@ -74,19 +120,26 @@ void main(void)
     vec4 pixel = texture2D( texture, coord );
 	vec3 pixelColor = pixel.rgb;
 	vec3 color;
-	
-	// Si el pixel es "rojo" (Esos rangos fueron sacados a ojo)
-	if( pixelColor.x >= 55.0/255.0 && pixelColor.y <= 50.0/255.0 && pixelColor.z <= 50.0/255.0 ) {
-	//
-	//color = ContrastSaturationBrightness( pixelColor, brightness, saturation, contrast );
-	color = swapColorRed(pixelColor);
-	} else if(pixelColor.x <= 50.0/255.0 && pixelColor.y >= 55.0/255.0 && pixelColor.z <= 50.0/255.0) {
-	color = swapColorGreen(pixelColor);
-	} else {
-	//Si no, dejarlo original
-	color = pixelColor;
+
+	vec3 lms = setLMS(pixelColor);
+
+	if(protanopia){
+		color = setProtanopia(lms);
+		color = correctProtanopia(lms, color);
 	}
-	float alpha = 1.0;
+	if(deuteranopia){
+		color = setDeuteranopia(lms);
+		color = correctDeuteranopia(lms, color);
+	}
+	if(protanopiaFilter){
+		color = setProtanopia(lms);
+	}
+	if(deuteranopiaFilter){
+		color = setDeuteranopia(lms);
+	}
+
+	color = setNewRGB(color);
+	float alpha = 1;
 	
 	gl_FragColor= vec4( color, alpha );
 }

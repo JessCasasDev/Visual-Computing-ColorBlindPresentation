@@ -1,3 +1,4 @@
+String message = "";
 void analysisRes(){
   identifyDaltType();
   activity = 3;
@@ -219,15 +220,30 @@ void identifyDaltType(){
           //daltonismo indeterminado
           wrong += 1;
   }
+  
   println("wrong: "+wrong+" - "+wrong/20);
   println("protanopia: "+protanopia+" - "+protanopia/20);
   println("deuteranopia: "+deuteranopia+" - "+deuteranopia/20);
+ 
+    
   if (wrong > 16){
     println("Daltonismo indeterminado");
-  }
+    message = "Daltonismo Indeterminado ";
+  }else{
     if (protanopia > deuteranopia){
       println("Hay "+protanopia/20*100+"% de probabilidad de protanopia");
+     message = "Tienes "+protanopia/20*100+"% de probabilidad de tener protanopia" ;
+     prot = true;
     } else {
-      println("Hay "+deuteranopia/20*100+"% de probabilidad de deuteranopia");
+      println("hay "+deuteranopia/20*100+"% de probabilidad deuteranopia");
+      message = "Hay "+deuteranopia/20*100+"% de probabilidad de tener deuteranopia";
+      deut = true;
     }
+  }
+  JOptionPane pane = new JOptionPane(
+      message, JOptionPane.PLAIN_MESSAGE,
+      JOptionPane.DEFAULT_OPTION, null, null);
+  JDialog dialog = pane.createDialog("Resultado");   
+  dialog.setAlwaysOnTop(true);  
+  dialog.setVisible(true);     
 }
