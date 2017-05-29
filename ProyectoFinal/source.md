@@ -154,16 +154,16 @@ H:
 V:
 
 ## Protanopia
-<img height='350' src='img/pro0.png'/>
-<img height='350' src='img/pro1.png'/>
-<img height='350' src='img/pro2.png'/>
+<img height='350' src='img/pro0.PNG'/>
+<img height='350' src='img/pro1.PNG'/>
+<img height='350' src='img/pro2.PNG'/>
 
 V:
 
 ## deuteranopia
 <img height='350' src='img/deu-0.PNG'/>
-<img height='350' src='img/deu-1.png'/>
-<img height='350' src='img/deu-2.png'/>
+<img height='350' src='img/deu-1.PNG'/>
+<img height='350' src='img/deu-2.PNG'/>
 
 H:
 
