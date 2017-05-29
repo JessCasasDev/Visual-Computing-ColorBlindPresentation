@@ -1,4 +1,4 @@
-<section id="themes">
+﻿<section id="themes">
 	<h2>Themes</h2>
 		<p>
 			Set your presentation theme: <br>
@@ -151,6 +151,12 @@ V:
 * 21 Cartas Identificadoras
 * De Control, Propias para cada tipo de Daltonismo
 
+V: 
+
+## Ejemplos Test
+<img height='500' src='img/Test.PNG'/>
+<img height='500' src='img/Test1.PNG'/>
+
 ## 
 
 V:
@@ -159,10 +165,30 @@ V:
 * Resultados del Test
 * Probabilidad de padecer cada enfermedad
 
+<img height='500' src='img/Resultado.PNG'/>
+
 V:
 
 ## 3) Imagenes Y Video
 * Carga de shader desarrollado en GLSL según el análisis de datos obtenido	
+
+* Vídeo Original
+
+<img height='350' src='img/Video1.PNG'/>
+
+V:
+
+## Vídeo con Filtro Protanope / Corrección de Imagen
+
+<img height ='400' src='img/protanopia.PNG'/>
+<img height ='400' src='img/protCorreccion.PNG'/>
+
+V:
+
+## Vídeo con Flitro Deuteranope / Corrección de Imagen
+
+<img height ='400' src='img/deuteranopia.PNG'/>
+<img height ='400' src='img/deutCorreccion.PNG'/>
 
 H:
 
@@ -181,6 +207,18 @@ V:
 <img height='350' src='img/deu-0.PNG'/>
 <img height='350' src='img/deu-1.PNG'/>
 <img height='350' src='img/deu-2.PNG'/>
+
+H: 
+
+## Demo
+
+* Ejecutar la Aplicación
+
+H:
+
+## Conclusiones
+
+* Andrés tu turno de brillar! :D
 
 H:
 
