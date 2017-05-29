@@ -8,6 +8,7 @@ int bSX, bSY;
 int step;
 int select;
 int activity;
+int imaR;
 int[] results;
 Capture cam;
 String[] cameras = Capture.list();
@@ -25,6 +26,7 @@ color base = color(255);
 
 void setup(){
   size(500, 600, P3D);
+  imaR = 0;
   select = 0;
   bSX = 80;
   bSY = 50;
@@ -85,7 +87,9 @@ void mousePressed() {
     if(activity == 4) exit();
     clear();
     background(255);
-  } else {
+  } else if(activity == 3){
+    imaR++;
+  }  else {
     switch(select){
       case 1:
         results[step] = 1;
