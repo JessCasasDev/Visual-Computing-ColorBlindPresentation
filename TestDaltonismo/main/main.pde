@@ -8,11 +8,15 @@ int step;
 int select;
 int activity;
 int[] results;
+int[] imageRDeu;
+int[] imageRPro;
 Capture cam;
 String[] cameras = Capture.list();
 
 float divi;
 float bit;
+float protanopia;
+float deuteranopia;
 PImage img;
 
 String[][] text;
@@ -23,7 +27,8 @@ color over = color(10,10,10,40);
 color base = color(255);
 
 void setup(){
-  size(500, 600, P3D);
+  size(500, 600);
+  imaR = 0;
   select = 0;
   bSX = 80;
   bSY = 50;
@@ -70,7 +75,9 @@ void draw(){
     break;
     case 2: analysisRes();
     break;
-    case 3: videoRes();
+    case 3: imagesRes();
+    break;
+    case 4: videoRes();
     break;
   }
   if (cam.available() == true) {
@@ -84,7 +91,9 @@ void mousePressed() {
     if(activity == 4) exit();
     clear();
     background(255);
-  } else {
+  } else if(activity == 3){
+    imaR++;
+  }  else {
     switch(select){
       case 1:
         results[step] = 1;

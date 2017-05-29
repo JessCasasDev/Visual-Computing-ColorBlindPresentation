@@ -13,9 +13,9 @@ void videoRes(){
   float b = map( mouseY / (float) height, 0.0, 1.0, 0.3, 1.5 ); // map the brightness to the vertical position of the cursor
 
   // Pass the parameters to the shader
-  toon.set( "contrast",   c );
-  toon.set( "saturation", s );
-  toon.set( "brightness", b );
+  //toon.set( "contrast",   c );
+  //toon.set( "saturation", s );
+  //toon.set( "brightness", b );
   if (applyFilter)
   filter(toon);
   //filter(loadShader("color.glsl"));

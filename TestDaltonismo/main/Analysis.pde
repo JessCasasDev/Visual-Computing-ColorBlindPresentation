@@ -5,8 +5,8 @@ void analysisRes(){
 
 
 void identifyDaltType(){
-  float protanopia = 0;
-  float deuteranopia = 0;
+  protanopia = 0;
+  deuteranopia = 0;
   int wrong = 0;
   if (results[0] == 1){ //Control, no afecta resultado
     
