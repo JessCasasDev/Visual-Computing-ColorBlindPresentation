@@ -35,10 +35,14 @@ H:
 <!-- .element: class="fragment" data-fragment-index="2"-->
 2. Interacción
 <!-- .element: class="fragment" data-fragment-index="3"-->
-3. Demo
+3. Resultado
 <!-- .element: class="fragment" data-fragment-index="4"-->
-4. Conclusiones
+3. Demo
 <!-- .element: class="fragment" data-fragment-index="5"-->
+4. Conclusiones
+<!-- .element: class="fragment" data-fragment-index="6"-->
+5. Referencias
+<!-- .element: class="fragment" data-fragment-index="7"-->
 
 H:
 
