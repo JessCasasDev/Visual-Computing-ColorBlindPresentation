@@ -99,13 +99,24 @@ V:
 
 V:
 
+## Otras referencias
+
+
+* [Intelligent modification for the daltonization process of digitized paintings](http://biecoll.ub.uni-bielefeld.de/volltexte/2007/52/pdf/ICVS2007-6.pdf) - Matriz de daltonismo
+
+* [Green-Weak Color Blindness Correction](https://prezi.com/3lwgj2wqqtvg/green-weak-color-blindness-correction/) - Correción de color
+
+* [Shaders basicos](https://processing.org/reference/shader_.html)
+
+V:
+
 ## Ejemplo de uso de una aplicación para personas daltónicas
 
 <img height='400' src='img/img-11.PNG'/>
 
 V:
 
-## Ejemplo 2
+## Ejemplo
 <img height='500' src='img/img-12.PNG'/>
 
 H:
@@ -140,6 +151,20 @@ H:
 
 ## Resultados
 
+V:
+
+## Protanopia
+<img height='350' src='img/Proto/Pro0.PNG'/>
+<img height='350' src='img/Proto/Pro1.PNG'/>
+<img height='350' src='img/Proto/Pro2.PNG'/>
+
+V:
+
+## deuteranopia
+<img height='350' src='img/Deutero/Deu0.PNG'/>
+<img height='350' src='img/Deutero/Deu1.PNG'/>
+<img height='350' src='img/Deutero/Deu2.PNG'/>
+
 H:
 
 ## Referencias
@@ -152,5 +177,15 @@ H:
 
 * [El Daltonismo](https://www.uam.es/personal_pdi/medicina/algvilla/fundamentos/nervioso/Daltonismo/daltonismo.html)
 
+V:
+
+## Referencias
+
+
 * [Why Color Blindness is No Longer a Problem for Web Design](https://www.templatemonster.com/blog/designing-colorblind-friendly-website/)
 
+* [Intelligent modification for the daltonization process of digitized paintings](http://biecoll.ub.uni-bielefeld.de/volltexte/2007/52/pdf/ICVS2007-6.pdf) - Matriz de daltonismo
+
+* [Green-Weak Color Blindness Correction](https://prezi.com/3lwgj2wqqtvg/green-weak-color-blindness-correction/) - Correción de color
+
+* [Shaders basicos](https://processing.org/reference/shader_.html)
