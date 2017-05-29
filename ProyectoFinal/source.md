@@ -1,4 +1,4 @@
-﻿<section id="themes">
+<section id="themes">
 	<h2>Themes</h2>
 		<p>
 			Set your presentation theme: <br>
@@ -26,6 +26,32 @@ H:
 * Carlos Cogua
 
 H:
+
+## Contenido
+
+1. Objetivo
+<!-- .element: class="fragment" data-fragment-index="1"-->
+1. Contexto
+<!-- .element: class="fragment" data-fragment-index="2"-->
+2. Interacción
+<!-- .element: class="fragment" data-fragment-index="3"-->
+3. Demo
+<!-- .element: class="fragment" data-fragment-index="4"-->
+4. Conclusiones
+<!-- .element: class="fragment" data-fragment-index="5"-->
+
+H:
+
+# Objetivo
+
+Proveer de una herramienta de ayuda para las personas que padecen de daltonismo haciendo uso de los contenidos aprendidos en clase
+<!-- .element: class="fragment" data-fragment-index="1"-->
+
+H:
+
+# Contexto
+
+V:
 
 ## ¿Qué es el daltonismo?
 
@@ -105,7 +131,7 @@ V:
 
 V:
 
-## Ejemplo 2
+## Ejemplo
 <img height='500' src='img/img-12.PNG'/>
 
 H:
@@ -125,6 +151,8 @@ V:
 * 21 Cartas Identificadoras
 * De Control, Propias para cada tipo de Daltonismo
 
+## 
+
 V:
 
 ## 2) Analisis de resultados
@@ -133,12 +161,26 @@ V:
 
 V:
 
-## 3) Video
-* Carga de shader desarrollado según el análisis de datos obtenido	
+## 3) Imagenes Y Video
+* Carga de shader desarrollado en GLSL según el análisis de datos obtenido	
 
 H:
 
 ## Resultados
+
+V:
+
+## Protanopia
+<img height='350' src='img/pro0.PNG'/>
+<img height='350' src='img/pro1.PNG'/>
+<img height='350' src='img/pro2.PNG'/>
+
+V:
+
+## deuteranopia
+<img height='350' src='img/deu-0.PNG'/>
+<img height='350' src='img/deu-1.PNG'/>
+<img height='350' src='img/deu-2.PNG'/>
 
 H:
 
@@ -152,5 +194,17 @@ H:
 
 * [El Daltonismo](https://www.uam.es/personal_pdi/medicina/algvilla/fundamentos/nervioso/Daltonismo/daltonismo.html)
 
+V:
+
+## Referencias
+
+
 * [Why Color Blindness is No Longer a Problem for Web Design](https://www.templatemonster.com/blog/designing-colorblind-friendly-website/)
+
+* [Intelligent modification for the daltonization process of digitized paintings](http://biecoll.ub.uni-bielefeld.de/volltexte/2007/52/pdf/ICVS2007-6.pdf) - Matriz de daltonismo
+
+* [Green-Weak Color Blindness Correction](https://prezi.com/3lwgj2wqqtvg/green-weak-color-blindness-correction/) - Correción de color
+
+* [Shaders basicos](https://processing.org/reference/shader_.html)
+
 
