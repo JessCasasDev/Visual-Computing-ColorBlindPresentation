@@ -164,8 +164,6 @@ V:
 <img height='500' src='img/Test.PNG'/>
 <img height='500' src='img/Test1.PNG'/>
 
-## 
-
 V:
 
 ## 2) Analisis de resultados
