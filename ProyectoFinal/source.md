@@ -266,7 +266,15 @@ H:
 
 * La utilización de shaders brinda mucha flexibilidad a la hora de trabajar con muchos elementos gráficos, realizando las tareas con un costo mucho menor.
 
+V:
+
+## Conclusiones
+
 * Muchas discapacidades como el daltonismo, que en ciertos casos puede ser limitante para las personas, pueden ser contrarrestadas sin necesidad de afectar el diseño completo de alguna aplicación.
+
+V:
+
+## Conclusiones
 
 * La tritanopia es un caso particular del daltonismo que debido a su rareza aún requiere más estudios para una mejor caracterización de sus efectos y así permitir la creación de herramientas que permitan reducir su impacto.
 
